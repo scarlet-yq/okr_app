@@ -1,4 +1,3 @@
-/*
 const path = require('path');
 const os = require('os');
 const webpack = require('webpack');
@@ -11,7 +10,6 @@ function resolve(dir) {
 
 const vuxLoader = require('vux-loader');
 const originalConfig = {
-    lintOnSave: true,
     configureWebpack: {
         resolve: {
             alias: {
@@ -90,14 +88,16 @@ const webpackConfig = originalConfig;
 
 module.exports = vuxLoader.merge(webpackConfig, {
     plugins: ['vux-ui']
-})*/
+})
 
 
+/*
 module.exports = {
     configureWebpack: config => {
-    require('vux-loader').merge(config, {
-    options: {},
-    plugins: ['vux-ui']
-})
+        require('vux-loader').merge(config, {
+            options: {},
+            plugins: ['vux-ui']
+        })
+    }
 }
-}
+*/
