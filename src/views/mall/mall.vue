@@ -2,6 +2,7 @@
     <div>
         <h1>this is mall huhdu page</h1>
         <Loading :show="show" :text="text"></Loading>
+        <p class="parm">哈哈哈哈哈啊</p>
     </div>
 </template>
 
@@ -24,5 +25,7 @@
 </script>
 
 <style>
-
+  .parm {
+    font-size:30px;
+  }
 </style>

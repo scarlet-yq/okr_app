@@ -12,6 +12,9 @@
     "iview": "2.8.0",
     "less": "2.3.1",
     "less-loader": "^4.1.0",
+    "lib-flexible": "^0.3.2",
+    "postcss-px-to-viewport": "^0.0.3",
+    "postcss-pxtorem": "^4.0.1",
     "vue": "^2.5.13",
     "vue-loader": "14.2.2",
     "vue-router": "^3.0.1",
@@ -38,7 +41,16 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-px-to-viewport": {
+          "viewportWidth": 750,      
+          "viewportHeight": 1334,    
+          "unitPrecision": 3,        
+          "viewportUnit": "vw",     
+          "selectorBlackList": [".ignore", ".hairlines"],  
+          "minPixelValue": 1,       
+          "mediaQuery": false       
+      }
     }
   },
   "browserslist": [
