@@ -13,10 +13,12 @@ const getters = {
 // actions
 const actions = {
     [types.DO_GET_USER_INFO] ({ commit, state }) {
-        console.log("111")
+        console.log("111");
         return accountResource.getAccount().then(response => {
-            console.log('response', data);
+            console.log('ajaa')
+            console.log('response', response.data, typeof response.data);
             commit(types.SET_USER_INFO, response.data);
+            console.log('set use info')
             return response.data;
         });
     }

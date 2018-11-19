@@ -12,6 +12,9 @@
     "iview": "2.8.0",
     "less": "2.3.1",
     "less-loader": "^4.1.0",
+    "lib-flexible": "^0.3.2",
+    "postcss-loader": "^3.0.0",
+    "postcss-px2rem": "^0.3.0",
     "vue": "^2.5.13",
     "vue-loader": "14.2.2",
     "vue-router": "^3.0.1",
@@ -38,7 +41,11 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-px2rem": {
+        "rootValue": 75,
+        "propList":["*"]
+      }
     }
   },
   "browserslist": [

@@ -39,20 +39,20 @@ export const appRouter = [
         title: '首页',
         component: () => import('@/views/home/home.vue')
     },
-    {
+    /*{
         path: '/okr',
         icon: 'app-okr',
         name: 'okr',
         title: 'okr',
         component: () => import('@/views/okr/okr.vue')
-    },
-    {
+    },*/
+    /*{
         path: '/notice',
         icon: 'app-notice',
         name: 'notice',
         title: '公告',
         component: () => import('@/views/notice/notice.vue')
-    },
+    },*/
     {
         path: '/mall',
         icon: 'app-mall',

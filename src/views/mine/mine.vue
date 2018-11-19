@@ -1,16 +1,16 @@
 <template>
     <div>
         this is mine page
-        <h1>haha{{userInfo.code}}</h1>
+        <h1>haha{{userInfo.name}}</h1>
     </div>
 </template>
 
 <script>
     import { mapGetters } from 'vuex';
+    import * as types from '../../store/types';
     export default {
         mounted() {
-            /*console.log("state", this.$store.state);
-            console.log("mapetters", this.$store.state.user.userInfo);*/
+            this.$store.dispatch(types.DO_GET_USER_INFO)
         },
         computed:  {
             ...mapGetters({

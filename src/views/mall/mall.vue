@@ -2,37 +2,43 @@
     <div>
         <h1>this is mall huhdu page</h1>
         <Loading :show="show" :text="text"></Loading>
-        <button-tab>
-            <button-tab-item>{{ today }}</button-tab-item>
-            <button-tab-item selected>{{ week }}</button-tab-item>
-            <button-tab-item>{{ month }}</button-tab-item>
-        </button-tab>
+        <p class="params">哈哈哈少有的好</p>
+        <div class="box">dewdhhhhhhhhhhhhhh</div>
+        <ul>
+            <li class="item">111</li>
+            <li class="item">222</li>
+            <li class="item">333</li>
+            <li class="item">444</li>
+        </ul>
     </div>
 </template>
 
 <script>
-    import {Loading, ButtonTab, ButtonTabItem} from 'vux';
+    import {Loading} from 'vux';
     export default {
         components: {
-            Loading,
-            ButtonTab,
-            ButtonTabItem
+            Loading
         },
         data() {
-          return {
-              show: true,
-              text: '厉害了',
-              today: "今天",
-              week: "本周",
-              month: "本月"
-          }
+            return {
+                show: true,
+                text: '厉害了'
+            }
         },
         mounted() {
-
         }
     }
 </script>
 
 <style>
-
+    @import './mall.css';
+    @import './mall.less';
+    .params {
+        font-size: 37.5px;
+    }
+    .box {
+        width: 1rem;
+        height: 1rem;
+        /*background-color: #f00;*/
+    }
 </style>
