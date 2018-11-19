@@ -217,6 +217,9 @@ configureWebpack: config => {
                 }
                 return source
             }
+        },{
+            name: 'less-theme',
+            path:'./src/assets/styles/vux_theme.less'
         }]
     })
 }

@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <div class="main">hahahah</div>
-    <h2>回复而非</h2>
-    <p>年hi互动和电话</p>
-    <h3>ahhisuhwud </h3>
-    <router-view></router-view>
+      <AppHeader :path="$route.path"></AppHeader>
+      <view-box ref="viewBox">
+          <router-view></router-view>
+      </view-box>
+      <AppFooter :path="$route.path"></AppFooter>
   </div>
 </template>
 
 <script>
+  import {  ViewBox } from 'vux';
+  import AppHeader from './views/my-components/app-header/app-header';
+  import AppFooter from './views/my-components/app-footer/app-footer';
 
+  export default {
+    components: {
+        ViewBox,
+        AppHeader,
+        AppFooter
+    },
+      mounted() {
+        console.log(this.$route.path)
+      }
+  }
 </script>
 
 <style lang="less">
-
+  @import './assets/styles/reset.css';
 </style>

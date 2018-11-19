@@ -66,6 +66,11 @@ export const appRouter = [
         name: 'mine',
         title: '我的',
         component: () => import('@/views/mine/mine.vue')
+    },
+    {
+        path: '/commodity-detail/:id',
+        name: 'detail',
+        component: () => import('@/views/commodity-detail/commodity-detail.vue')
     }
 ];
 

@@ -1,0 +1,25 @@
+{
+  "code": 0,
+  "data": [{
+    "url": "/commodity-detail/good1",
+    "img": "data/image/banner1.jpg",
+    "title": ""
+  },
+    {
+      "url": "/commodity-detail/good2",
+      "img": "data/image/banner2.jpg",
+      "title": ""
+    },
+    {
+      "url": "/commodity-detail/good3",
+      "img": "data/image/banner3.jpg",
+      "title": ""
+    },
+    {
+      "url": "/commodity-detail/good4",
+      "img": "data/image/banner4.jpg",
+      "title": ""
+    }
+  ],
+  "msg": "最新商品"
+}
