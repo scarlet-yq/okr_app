@@ -1,6 +1,6 @@
 .commodity-card {
   display: flex;
-  padding-bottom: 1px;
+  //padding-bottom: 1px;
   border-bottom:1px solid #dddde2;
   .img {
     width: 300px;
@@ -12,8 +12,9 @@
   .content {
     flex: 1;
     padding-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-bottom:22px;
+    font-size:26px;
     .productName {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -25,22 +26,30 @@
       font-weight: bold;
       color: #333;
       line-height: 40px;
+      margin-bottom:12px;
+      height: 80px;
     }
     .status {
       padding: 3px 5px;
+      display: inline-block;
       border-radius: 30px;
-      font-size:12px;
-      border: 2px solid #ed3f14;
-      color: #ed3f14;
-      margin:10px 0;
+      //font-size:20px;
+      border: 2px solid #f00;
+      color: #f00;
+      margin:14px 0;
     }
     .points {
-      color: #ed3f14;
+      color: #f00;
       line-height:24px;
+      margin:14px 0;
+
     }
     .join {
-      color: #888;
-      font-size:14px;
+      color: #333;
+      //font-size:14px;
+      padding-top: 12px;
+      //margin:12px 0;
+
     }
   }
 }

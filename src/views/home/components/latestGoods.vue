@@ -17,7 +17,6 @@
         mounted() {
             homeResource.queryLatestGoodsList().
                 then(response => {
-                    console.log('goods', response);
                     this.bannerImgList = response.data;
             })
         }

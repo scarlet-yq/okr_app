@@ -1,17 +1,32 @@
 <template>
     <div>
-        <Commodity></Commodity>
+        <Commodity v-for="(item, index) in commodityList" :key="index" :data="item"></Commodity>
     </div>
 </template>
 
 <script>
+    import {commodityResource} from '../../api';
     import Commodity from './components/commodity';
 
     export default {
         components: {
             Commodity
         },
+        data() {
+          return {
+              commodityList: []
+          }
+        },
         mounted() {
+            commodityResource.queryAllCommodityList()
+                .then(response => {
+                    let {code, data} = response;
+                    if (code === 0) {
+                        // console.log('mall', data);
+                        this.commodityList = data;
+
+                    }
+                })
         }
     }
 </script>

@@ -25,7 +25,7 @@
     data.map(obj => {
         map[obj.name] = obj.percent ;
     })*/
-    let _map = {}
+//    let _map = {}
     export default {
         components: {
             VChart,
@@ -40,16 +40,17 @@
         },
         data() {
             return {
-                map: {},
-                htmlOptions: {
+                htmlOptions: {},
+                /*htmlOptions: {
                     position: [ '50%', '50%' ],
                     html: `
                       <div style="width: 250px;height: 40px;text-align: center;">
                         <div style="font-size: 16px;padding-bottom: 6px;">总积分</div>
-                        <div style="font-size: 18px">1000</div>
+                        <div style="font-size: 18px">${validScoreTotal}</div>
                       </div>`
-                },
-                legendOptions: {
+                },*/
+                legendOptions: {},
+                /*legendOptions: {
                     position: 'bottom',
                     align: 'center',
                     padding: [100, 0, 0, 0],
@@ -58,51 +59,67 @@
                         console.log(val, '-----', _map);
                         return  '   ' + val + '                               ' + _map[val] + '     '
                     }
-                },
+                },*/
                 yOptions: {
                     formatter (val) {
                         return val * 100 + '%'
                     }
                 },
+                map: {},
                 data: [],
+                validScoreTotal: 0
             }
         },
-        watch:{
-            data(newData, oldData){
-                console.log(2222222222221213, newData, '---', oldData);
-            },
-        },
         mounted() {
-            this.test = 2;
             homeResource.queryCurrentUserScoreInfo()
                 .then(response => {
                     let { code, data } = response;
                     if (code === 0) {
-//                        this.$nextTick(() => {
-                            /*this.data = [
+                        this.$nextTick(() => {
+                            this.data = [
                                 { name: '可用积分', percent: data.workabilityScoreTotal, a: '1' },
                                 { name: '使用积分', percent: data.abatementScoreTotal, a: '1' }
                             ];
-                            const map = {}
+                            let map = {};
                             this.data.map(obj => {
-                                this.map[obj.name] = obj.percent ;
-                            });*/
-                            this.$set(this.$data, 'data', [
-                                { name: '可用积分', percent: data.workabilityScoreTotal, a: '1' },
-                                { name: '使用积分', percent: data.abatementScoreTotal, a: '1' }
-                            ]);
-
-//                            this.data = Object.assign([], this.data);
-
-                            const map = {}
-                            this.data.map(obj => {
-                                this.map[obj.name] = obj.percent ;
+                                map[obj.name] = obj.percent ;
                             });
+                            this.map = map;
+//                            console.log("this.map", map, + '-----')
 
-                            this.$set(this.$data, 'map', map);
-                            _map = map;
-                             console.log(111111, this.map, this.data);
-//                        });
+//                            var _this = this;
+                            this.legendOptions = {
+                                position: 'bottom',
+                                align: 'center',
+                                padding: [100, 0, 0, 0],
+                                height: '200',
+                                itemFormatter: (val) => {
+//                                    console.log("this", this === _this, "this.map" + this.map);
+//                                    console.log(val, '-----', (this.map[val]));
+                                    return  '   ' + val + '                               ' + (this.map[val]) + '     '
+                                }
+                            };
+                            this.htmlOptions = {
+                                position: [ '50%', '50%' ],
+                                html: `
+                                  <div style="width: 250px;height: 40px;text-align: center;">
+                                    <div style="font-size: 16px;padding-bottom: 6px;">总积分</div>
+                                    <div style="font-size: 18px">${data.validScoreTotal}</div>
+                                  </div>`
+                            };
+//                            this.validScoreTotal = data.validScoreTotal;
+//                            console.log('validScoreTotal',this.validScoreTotal)
+//                            this.$set(this.$data, 'validScoreTotal', data.validScoreTotal);
+
+//                            console.log("this.map------", this.map, '------------')
+                            /*for (var key in this.map) {
+                                console.log("map-key:" + key+'-----map-value:'+ this.map[key] )
+                            }*/
+//                            _map = this.map;
+//                            this.$set(this.$data, 'map', map);
+//                            _map = map;
+
+                        });
                     }
                 })
         }

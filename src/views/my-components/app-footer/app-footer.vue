@@ -26,7 +26,7 @@
            }
        },
         mounted() {
-            console.log('app-footer path', this.path)
+//            console.log('app-footer path', this.path)
         },
         computed: {
             show() {

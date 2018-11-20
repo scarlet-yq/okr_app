@@ -4,7 +4,7 @@
     {
       "id": 0,
       "src": "/data/image/product1.jpg",
-      "productName": "尼康相机",
+      "productName": "尼康（Nikon）D750专业全画幅单反数码照相机旅游拍摄 单机机身(不含镜头)",
       "status": 0,
       "statusText": "竞拍",
       "points": 100,
@@ -13,7 +13,7 @@
     {
       "id": 1,
       "src": "/data/image/product2.jpg",
-      "productName": "小米耳机",
+      "productName": "Apple 苹果原装AirPods无线蓝牙耳机ipad 2/iPhone手机通用 防丢套装【充电头+保护套+防丢绳】 MMEF2",
       "status": 1,
       "statusText": "兑换",
       "points": 110,
@@ -22,7 +22,7 @@
     {
       "id": 2,
       "src": "/data/image/product3.jpg",
-      "productName": "尼康相机",
+      "productName": "暴狼客发光游戏键盘鼠标套装有线悬浮牧马人机械手感键鼠套装办公家用台式电脑笔记本USB外接键盘 GX50黑色彩虹背光键盘+牧马人静音鼠标",
       "status": 0,
       "statusText": "竞拍",
       "points": 100,
@@ -30,7 +30,7 @@
     },
     {
       "id": 3,
-      "src": "/data/image/product4.jpg",
+      "src": "/data/image/product1.jpg",
       "productName": "尼康相机",
       "status": 0,
       "statusText": "竞拍",
@@ -39,8 +39,8 @@
     },
     {
       "id": 4,
-      "src": "/data/image/product5.jpg",
-      "productName": "机械键盘",
+      "src": "/data/image/product2.jpg",
+      "productName": "暴狼客发光游戏键盘鼠标套装有线悬浮牧马人机械手感键鼠套装办公家用台式电脑笔记本USB外接键盘",
       "status": 1,
       "statusText": "兑换",
       "points": 150,
@@ -48,7 +48,7 @@
     },
     {
       "id": 5,
-      "src": "/data/image/product6.jpg",
+      "src": "/data/image/product3.jpg",
       "productName": "尼康相机",
       "status": 0,
       "statusText": "竞拍",

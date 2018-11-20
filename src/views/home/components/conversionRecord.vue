@@ -35,7 +35,6 @@
                 .then(response => {
                     let {code, data} = response;
                     if (code === 0) {
-                        console.log("goods", data)
                         this.conversionlist = data;
                     }
                 })
