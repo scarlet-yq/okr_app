@@ -1,5 +1,5 @@
 <template>
-    <tabbar v-show="show" >
+    <tabbar v-show="show" slot="bottom">
         <tabbar-item  v-for="(item, index) in tabbarData" :key="index" :link="item.link" :selected="index === 0 ? true : false">
             <img slot="icon" :src="item.icon" />
             <img slot="icon-active" :src="item.icon_active" />

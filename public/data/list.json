@@ -1,0 +1,36 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "productName": "尼康相机",
+      "name": "刘腾飞",
+      "points": 10
+    },
+    {
+      "productName": "尼康相机",
+      "name": "刘腾飞",
+      "points": 20
+    },
+    {
+      "productName": "尼康相机",
+      "name": "马勇",
+      "points": 10
+    },
+    {
+      "productName": "尼康相机",
+      "name": "尧舜",
+      "points": 10
+    },
+    {
+      "productName": "尼康相机",
+      "name": "马勇",
+      "points": 10
+    },
+    {
+      "productName": "尼康相机",
+      "name": "刘非",
+      "points": 10
+    }
+  ],
+  "msg": "兑换记录"
+}

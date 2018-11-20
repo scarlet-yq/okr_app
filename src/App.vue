@@ -27,4 +27,16 @@
 
 <style lang="less">
   @import './assets/styles/reset.css';
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #app {
+        height: 100%;
+    }
+  .weui-tab__panel {
+        padding-top: 46PX;
+    }
 </style>

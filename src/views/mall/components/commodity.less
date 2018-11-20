@@ -1,0 +1,46 @@
+.commodity-card {
+  display: flex;
+  padding-bottom: 1px;
+  border-bottom:1px solid #dddde2;
+  .img {
+    width: 300px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .content {
+    flex: 1;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .productName {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-size: 30px;
+      font-weight: bold;
+      color: #333;
+      line-height: 40px;
+    }
+    .status {
+      padding: 3px 5px;
+      border-radius: 30px;
+      font-size:12px;
+      border: 2px solid #ed3f14;
+      color: #ed3f14;
+      margin:10px 0;
+    }
+    .points {
+      color: #ed3f14;
+      line-height:24px;
+    }
+    .join {
+      color: #888;
+      font-size:14px;
+    }
+  }
+}

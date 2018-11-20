@@ -1,0 +1,60 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": 0,
+      "src": "/data/image/product1.jpg",
+      "productName": "尼康相机",
+      "status": 0,
+      "statusText": "竞拍",
+      "points": 100,
+      "partakePeople": 20
+    },
+    {
+      "id": 1,
+      "src": "/data/image/product2.jpg",
+      "productName": "小米耳机",
+      "status": 1,
+      "statusText": "兑换",
+      "points": 110,
+      "partakePeople": 14
+    },
+    {
+      "id": 2,
+      "src": "/data/image/product3.jpg",
+      "productName": "尼康相机",
+      "status": 0,
+      "statusText": "竞拍",
+      "points": 100,
+      "partakePeople": 20
+    },
+    {
+      "id": 3,
+      "src": "/data/image/product4.jpg",
+      "productName": "尼康相机",
+      "status": 0,
+      "statusText": "竞拍",
+      "points": 100,
+      "partakePeople": 20
+    },
+    {
+      "id": 4,
+      "src": "/data/image/product5.jpg",
+      "productName": "机械键盘",
+      "status": 1,
+      "statusText": "兑换",
+      "points": 150,
+      "partakePeople": 40
+    },
+    {
+      "id": 5,
+      "src": "/data/image/product6.jpg",
+      "productName": "尼康相机",
+      "status": 0,
+      "statusText": "竞拍",
+      "points": 100,
+      "partakePeople": 20
+    }
+  ],
+  "msg": "商品列表"
+}

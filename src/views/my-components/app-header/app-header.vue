@@ -1,5 +1,5 @@
 <template>
-    <x-header v-show="isShow" style="background-color: #11C2EE;" :left-options="{showBack: false}">OKR 系統</x-header>
+    <x-header slot="header" style="width:100%;position:absolute;left:0;top:0;z-index:100;background-color: #11C2EE;" v-show="isShow"  :left-options="{showBack: false}">OKR 系統</x-header>
 </template>
 
 <script>
